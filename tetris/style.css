@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    background: #1b1400;
+    color: #fff8c6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    user-select: none;
+}
+
+.game-container {
+    background: #2a2100;
+    border: 4px solid #ffd400;
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 40px rgba(255, 212, 0, 0.45);
+}
+
+.game-title {
+    color: #ffe45c;
+    font-size: 2.2em;
+    margin: 0 0 20px;
+    text-shadow: 3px 3px #8b5a00;
+}
+
+.game-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.tetris-grid {
+    width: 200px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 1px;
+    background: #090700;
+    border: 2px solid #ffd400;
+    position: relative;
+    overflow: hidden;
+}
+
+.tetris-cell {
+    background: none;
+    transition: background-color 0.2s ease;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.control-btn {
+    background: #ffd400;
+    color: #2a2100;
+    border: none;
+    padding: 12px 0;
+    border-radius: 0;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.1s ease;
+    width: 22%;
+    text-shadow: 1px 1px #fff4a3;
+}
+
+.control-btn:hover {
+    background: #fff06a;
+    transform: translateY(-2px);
+}
+
+.control-btn:active {
+    transform: translateY(1px);
+    background: #d89b00;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    width: 120px;
+    background: #2a2100;
+    padding: 10px;
+    border: 2px solid #ffd400;
+    height: 400px;
+    box-sizing: border-box;
+}
+
+.monkey-face {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.stat-icon {
+    font-size: 12px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 10px;
+    background: #090700;
+    border: 2px solid #ffb000;
+}
+
+.stat-value {
+    font-weight: 700;
+    transition: transform 0.2s ease;
+}
+
+#hydration {
+    color: #7fd7ff;
+}
+
+#nutrition {
+    color: #ffd400;
+}
+
+#mood {
+    color: #fff06a;
+}
+
+.danger {
+    border-color: #ff4d00 !important;
+    color: #ff4d00 !important;
+}
+
+.game-info {
+    margin-top: auto;
+}
+
+.info-box {
+    background: #090700;
+    border: 2px solid #ffd400;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.info-label {
+    font-size: 0.6em;
+    color: #ffb000;
+    margin-bottom: 2px;
+}
+
+.info-value {
+    font-size: 1em;
+    font-weight: 700;
+    transition: transform 0.2s ease;
+}
+
+#score-value {
+    color: #fff06a;
+}
+
+#right-btn {
+    margin-right: 10%;
+}
+
+.path-highlight {
+    position: absolute;
+    background: rgba(255, 212, 0, 0.12);
+    pointer-events: none;
+}
+
+.highlight-change {
+    transform: scale(1.05);
+}

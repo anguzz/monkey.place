@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>MONKEY</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1 class="game-title">MONKEY</h1>
+        <div class="game-content">
+            <div class="tetris-grid"></div>
+            <div class="stats">
+                <div class="monkey-face" id="monkey-emoji">🐵</div>
+                <div class="stat-icon" id="hydration">💧 <span id="hydration-value" class="stat-value">0</span></div>
+                <div class="stat-icon" id="nutrition">🍌 <span id="nutrition-value" class="stat-value">0</span></div>
+                <div class="stat-icon" id="mood">😊 <span id="mood-value" class="stat-value">0</span></div>
+                <div class="game-info">
+                    <div class="info-box">
+                        <div class="info-label">LEVEL</div>
+                        <div id="level-value" class="info-value">1</div>
+                    </div>
+                    <div class="info-box">
+                        <div class="info-label">SCORE</div>
+                        <div id="score-value" class="info-value">0</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <button class="control-btn" id="left-btn">←</button>
+            <button class="control-btn" id="rotate-btn">↻</button>
+            <button class="control-btn" id="right-btn">→</button>
+            <button class="control-btn" id="drop-btn">↓</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
